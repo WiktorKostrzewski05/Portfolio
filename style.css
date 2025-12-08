@@ -1,0 +1,35 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 80px; 
+    background-color: #f9fafb;
+    font-family: "Segoe UI", sans-serif;
+}
+
+#navbar {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.7);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: background 0.3s ease;
+}
+
+#navbar .navbar-brand {
+    color: #0a0a0a;
+}
+
+#navbar .nav-link {
+    color: #333;
+    margin-left: 18px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 4px;
+    transition: color 0.2s ease-in-out;
+}
+
+#navbar .nav-link:hover {
+    color: #007bff;
+}
+
