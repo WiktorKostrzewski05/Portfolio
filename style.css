@@ -166,14 +166,35 @@ body.dark-theme .home-text .subtitle.text-muted {
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.03);
 }
 
+.section-surface-1 {
+  background: #f8fafc;
+}
+
+.section-surface-2 {
+  background: #f1f5f9;
+}
+
+.anchor-section {
+  scroll-margin-top: 120px;
+}
+
 #skills {
-  background: var(--bg);
   padding-top: 6rem !important;
 }
 
 #skills h2 {
   color: var(--text);
   font-size: 2.5rem;
+}
+
+.section-icon {
+  color: var(--accent);
+  font-size: 1.9rem;
+  margin-bottom: 0.6rem;
+}
+
+.section-icon i {
+  filter: drop-shadow(0 6px 16px rgba(14, 165, 160, 0.25));
 }
 
 .skill-card {
@@ -198,6 +219,11 @@ body.dark-theme .home-text .subtitle.text-muted {
   border: none;
   height: 100%;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.content-card .card-body {
+  padding: 0;
+  background: transparent;
 }
 
 .content-card:hover {
@@ -309,6 +335,30 @@ body.dark-theme .home-text .subtitle.text-muted {
   color: #d8e1ef;
 }
 
+.dark-theme .skill-card {
+  background: #0f172a;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.55);
+}
+
+.dark-theme .skill-card h5 {
+  color: #f5f7fb;
+}
+
+.dark-theme .skill-tag {
+  background: rgba(34, 211, 197, 0.12);
+  color: #22d3c5;
+  border: 1px solid rgba(34, 211, 197, 0.3);
+}
+
+.dark-theme .section-surface-1 {
+  background: #0a101d;
+}
+
+.dark-theme .section-surface-2 {
+  background: #080d19;
+}
+
 .dark-theme .content-card {
   background: #0f172a;
   border: 1px solid rgba(255, 255, 255, 0.06);
@@ -322,6 +372,10 @@ body.dark-theme .home-text .subtitle.text-muted {
 .dark-theme .experience-card .text-muted,
 .dark-theme .experience-list li {
   color: #d8e1ef !important;
+}
+
+.dark-theme .content-card .text-muted {
+  color: #d0d9ea !important;
 }
 
 .dark-theme .tech-badge {
@@ -458,6 +512,9 @@ body.dark-theme .home-text .subtitle.text-muted {
 @media (max-width: 768px) {
   .home-section {
     padding-top: 3rem;
+  }
+  .anchor-section {
+    scroll-margin-top: 100px;
   }
   .home-photo {
     order: -1;
