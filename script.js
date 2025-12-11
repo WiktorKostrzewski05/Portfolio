@@ -23,3 +23,12 @@
       syncLabel();
     });
   })();
+
+(() => {
+  if (typeof bootstrap !== 'undefined') {
+    new bootstrap.ScrollSpy(document.body, {
+      target: '#navbar',
+      offset: 90,
+    });
+  }
+})();
