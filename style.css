@@ -509,6 +509,119 @@ body.dark-theme .home-text .subtitle.text-muted {
   color: var(--accent);
 }
 
+.contact-section-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.contact-section-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.contact-icon-circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: rgba(14, 165, 160, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--accent);
+  font-size: 1.2rem;
+}
+
+.dark-theme .contact-icon-circle {
+  background: rgba(34, 211, 197, 0.12);
+  color: #22d3c5;
+}
+
+.contact-section-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-section-details small {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.contact-link {
+  color: var(--text);
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+  color: var(--accent);
+}
+
+.dark-theme .contact-link {
+  color: #f5f7fb;
+}
+
+.dark-theme .contact-link:hover {
+  color: #22d3c5;
+}
+
+.footer {
+  background: var(--card);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.dark-theme .footer {
+  background: #0b1020;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.footer-links {
+  margin-top: 0.5rem;
+}
+
+.footer-link {
+  color: var(--muted);
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(14, 165, 160, 0.08);
+}
+
+.footer-link:hover {
+  color: var(--accent);
+  transform: translateY(-2px);
+  background: rgba(14, 165, 160, 0.15);
+}
+
+.dark-theme .footer-link {
+  background: rgba(34, 211, 197, 0.1);
+  color: #a9b4c7;
+}
+
+.dark-theme .footer-link:hover {
+  color: #22d3c5;
+  background: rgba(34, 211, 197, 0.2);
+}
+
 @media (max-width: 768px) {
   .home-section {
     padding-top: 3rem;
