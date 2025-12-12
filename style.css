@@ -71,6 +71,12 @@ body.dark-theme {
   display: grid;
   place-items: center;
   padding-bottom: 4rem;
+  padding-top: 2rem;
+  margin-top: -70px;
+}
+
+.home-text {
+  max-width: 600px;
 }
 
 .home-text h1 {
@@ -149,21 +155,22 @@ body.dark-theme .home-text .subtitle.text-muted {
   position: relative;
   width: min(420px, 85vw);
   aspect-ratio: 1;
-  background: var(--card);
   border-radius: 22px;
   box-shadow:
     0 25px 80px var(--shadow-strong),
     0 8px 20px var(--shadow-soft);
-  padding: 16px;
   overflow: hidden;
+  flex-shrink: 0;
+  margin-left: auto;
+  margin-right: 100px;
 }
 
 .home-photo img {
-  width: 100%;
-  height: 100%;
+  width: 100% ;
+  height: 100% ;
   object-fit: cover;
-  border-radius: 18px;
-  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.03);
+  object-position: center 25%;
+  border-radius: 22px;
 }
 
 .section-surface-1 {
