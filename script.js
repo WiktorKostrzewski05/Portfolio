@@ -26,9 +26,51 @@
 
 (() => {
   if (typeof bootstrap !== 'undefined') {
-    new bootstrap.ScrollSpy(document.body, {
-      target: '#navbar',
-      offset: 120,
+    document.body.removeAttribute('data-bs-spy');
+    
+    const navbar = document.getElementById('navbar');
+    const navLinks = navbar.querySelectorAll('.nav-link[href^="#"]');
+    const sections = document.querySelectorAll('section[id]');
+    
+    const updateActiveLink = () => {
+      const scrollPos = window.scrollY + 150; 
+      
+      sections.forEach((section, index) => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+        const sectionId = section.getAttribute('id');
+        
+        if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
+          navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${sectionId}`) {
+              link.classList.add('active');
+            }
+          });
+        }
+      });
+      
+      if (window.scrollY < 200) {
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === '#home') {
+            link.classList.add('active');
+          }
+        });
+      }
+    };
+    
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          updateActiveLink();
+          ticking = false;
+        });
+        ticking = true;
+      }
     });
+    
+    updateActiveLink();
   }
 })();
