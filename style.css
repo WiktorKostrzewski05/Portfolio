@@ -305,6 +305,51 @@ body.dark-theme .home-text .subtitle.text-muted {
   border: 1px solid rgba(14, 165, 160, 0.2);
 }
 
+.project-github-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 40%;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(107, 114, 128, 0.12);
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 1px solid rgba(107, 114, 128, 0.2);
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.12s ease;
+}
+
+.project-github-btn:hover {
+  background: rgba(107, 114, 128, 0.22);
+  color: var(--text);
+  border-color: rgba(107, 114, 128, 0.35);
+  transform: translateY(-1px);
+}
+
+.project-website-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  background: rgba(107, 114, 128, 0.12);
+  color: var(--muted);
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: 1px solid rgba(107, 114, 128, 0.2);
+  text-decoration: none;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.12s ease;
+}
+
+.project-website-btn:hover {
+  background: rgba(107, 114, 128, 0.22);
+  color: var(--text);
+  border-color: rgba(107, 114, 128, 0.35);
+  transform: translateY(-1px);
+}
+
 .project-list {
   padding-left: 1.1rem;
   display: grid;
@@ -352,6 +397,30 @@ body.dark-theme .home-text .subtitle.text-muted {
 .dark-theme .project-card .card-text,
 .dark-theme .project-list li {
   color: #d8e1ef;
+}
+
+.dark-theme .project-github-btn {
+  background: rgba(169, 180, 199, 0.12);
+  color: var(--muted);
+  border-color: rgba(169, 180, 199, 0.2);
+}
+
+.dark-theme .project-github-btn:hover {
+  background: rgba(169, 180, 199, 0.22);
+  color: var(--text);
+  border-color: rgba(169, 180, 199, 0.35);
+}
+
+.dark-theme .project-website-btn {
+  background: rgba(169, 180, 199, 0.12);
+  color: var(--muted);
+  border-color: rgba(169, 180, 199, 0.2);
+}
+
+.dark-theme .project-website-btn:hover {
+  background: rgba(169, 180, 199, 0.22);
+  color: var(--text);
+  border-color: rgba(169, 180, 199, 0.35);
 }
 
 .dark-theme .skill-card {
